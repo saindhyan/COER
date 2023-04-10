@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:id="@+id/navigation_notice"
+    android:title="Notice"
+    android:icon="@drawable/noun_notice_3652351" />
+<item android:id="@+id/navigation_post"
+    android:title="Posts"
+    android:icon="@drawable/post" />
+
+    <item android:id="@+id/navigation_tools"
+    android:title="Tools"
+       android:icon="@drawable/noun_tools_1278400" />
+
+    <item android:id="@+id/navigation_profile"
+    android:title="Profile"
+        android:icon="@drawable/noun_profile_4127622"/>
+
+    <item android:id="@+id/navigation_about"
+    android:title="About"
+        android:icon="@drawable/noun_education_about_637408"/>
+
+</menu>

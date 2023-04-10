@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/whitewithroundcorner"
+    android:elevation="5dp"
+    android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fimage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profile_circular_border_imageview"
+        android:elevation="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/noprofile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fimage"
+        app:layout_constraintStart_toEndOf="@+id/fimage"
+        app:layout_constraintTop_toTopOf="@+id/fimage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/fabout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faculty"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/fname"
+        app:layout_constraintTop_toBottomOf="@+id/fname" />
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fimage"
+        app:srcCompat="@drawable/more" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/postimage"
+        android:layout_width="382dp"
+        android:layout_height="382dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coer_roorkee"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captiontv"
+        app:riv_corner_radius="10dip"
+        app:riv_mutate_background="true" />
+
+    <ImageView
+        android:id="@+id/likebuton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/likecount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postimage"
+        app:srcCompat="@drawable/like" />
+
+    <TextView
+        android:id="@+id/likecount"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="000"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/likebuton"
+        app:layout_constraintEnd_toStartOf="@+id/commentbuton"
+        app:layout_constraintStart_toEndOf="@+id/likebuton"
+        app:layout_constraintTop_toTopOf="@+id/likebuton" />
+
+    <ImageView
+        android:id="@+id/commentbuton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/likecount"
+        app:layout_constraintEnd_toStartOf="@+id/commentcount"
+        app:layout_constraintStart_toEndOf="@+id/likecount"
+        app:layout_constraintTop_toTopOf="@+id/likecount"
+        app:srcCompat="@drawable/comment" />
+
+    <TextView
+        android:id="@+id/commentcount"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="000"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/commentbuton"
+        app:layout_constraintEnd_toStartOf="@+id/share"
+        app:layout_constraintStart_toEndOf="@+id/commentbuton"
+        app:layout_constraintTop_toTopOf="@+id/commentbuton" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/commentcount"
+        app:layout_constraintStart_toEndOf="@+id/commentcount"
+        app:layout_constraintTop_toTopOf="@+id/commentcount"
+        app:srcCompat="@drawable/share" />
+
+    <TextView
+        android:id="@+id/dt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:text="12/07/2022 10:22"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/share"
+        app:layout_constraintTop_toTopOf="@+id/share"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <TextView
+        android:id="@+id/captiontv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/more"
+        app:layout_constraintStart_toStartOf="@+id/fimage"
+        app:layout_constraintTop_toBottomOf="@+id/fimage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

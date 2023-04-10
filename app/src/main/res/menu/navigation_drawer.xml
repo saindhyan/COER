@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/navigation_home"
+        android:title="Home"
+        android:icon="@drawable/noun_home" />
+    <item
+        android:id="@+id/navigation_website"
+        android:title="Website"
+        android:icon="@drawable/noun_website_" />
+    <item android:id="@+id/communicate"
+        android:title="communicate">
+        <menu>
+            <item
+                android:id="@+id/navigation_share"
+                android:title="Share"
+                android:icon="@drawable/noun_share" />
+            <item
+                android:id="@+id/navigation_ContectUs"
+                android:title="Contect Us"
+                android:icon="@drawable/noun_contect" />
+            <item
+                android:id="@+id/navigation_developer"
+                android:title="Developer"
+                android:icon="@drawable/noun_developer" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/noun_logout"
+                android:title="Logout" />
+        </menu>
+
+    </item>
+    </group>
+</menu>

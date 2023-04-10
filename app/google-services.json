@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "593254309139",
+    "project_id": "coer-notification",
+    "storage_bucket": "coer-notification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593254309139:android:5cb2aafe809cbc24ea8ee6",
+        "android_client_info": {
+          "package_name": "coer.notification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593254309139-m79q0plv1uq2k9fs78pvgvbjf1t9kqdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdFAntPsmnZRwO6z7uxGDs2xVhYBnvIGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593254309139-m79q0plv1uq2k9fs78pvgvbjf1t9kqdb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
